@@ -1,27 +1,23 @@
-<div align="center">
-
 # LocalMind AI
 
 ### A Local-First Multimodal AI Assistant for Text, Vision, and Audio
 
-*Master's in Artificial Intelligence and Emerging Technologies (MIATE)*  
-*Faculty of Nador (FPN) — Mohammed First University*
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688)](https://fastapi.tiangolo.com/)
+[![Ollama](https://img.shields.io/badge/Ollama-Local%20Inference-black)](https://ollama.com/)
+[![LLaVA](https://img.shields.io/badge/LLaVA-Vision--Language-purple)](https://llava-vl.github.io/)
+[![Whisper](https://img.shields.io/badge/Whisper-Speech%20Recognition-green)](https://github.com/openai/whisper)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-Interface-E34F26)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![Jinja2](https://img.shields.io/badge/Jinja2-Templates-B41717)](https://jinja.palletsprojects.com/)
+[![Status](https://img.shields.io/badge/Status-In%20Development-orange)]()
 
-<br/>
+**Academic Program:** Master's in Artificial Intelligence and Emerging Technologies (MIATE)  
+**Institution:** Faculty of Applied Sciences, Nador (FSA Nador), Mohammed First University, Morocco
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-Local%20Inference-000000?style=for-the-badge)
-![LLaVA](https://img.shields.io/badge/LLaVA-7B-7C3AED?style=for-the-badge)
-![Whisper](https://img.shields.io/badge/Whisper-Speech%20Recognition-412991?style=for-the-badge)
-
-![HTML](https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-E34F26?style=flat-square)
-![Multimodal AI](https://img.shields.io/badge/AI-Multimodal-0EA5E9?style=flat-square)
-![Computer Vision](https://img.shields.io/badge/Module-Computer%20Vision-2563EB?style=flat-square)
-![Local AI](https://img.shields.io/badge/Inference-Local-16A34A?style=flat-square)
-![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=flat-square)
-
-</div>
+**Author:** [Mohammed Boujaada](https://github.com/mohammed-boujaada)  
+**Collaborative Repository:** [moza369/localmind-ai](https://github.com/moza369/localmind-ai)
 
 ---
 
@@ -46,79 +42,76 @@
 
 ## 1. Project Overview
 
-**LocalMind AI** is a multimodal AI assistant designed to run locally and bring text interaction, image understanding, and audio input together in a single web application.
+**LocalMind AI** is a local-first multimodal AI assistant designed to bring text interaction, image understanding, and audio transcription together in a single web application.
 
 Developed with Python and FastAPI, the application integrates Ollama for local model execution, LLaVA for vision-language tasks, and OpenAI Whisper for speech transcription.
 
-The project explores how computer vision and speech recognition can be integrated into an interactive AI application while reducing reliance on external model-hosting services.
+The project explores how different AI capabilities can be combined in one interactive application while reducing reliance on externally hosted AI services.
 
-The interface allows users to communicate with the assistant, upload images for analysis, and provide audio for transcription and processing.
+Users can interact with the assistant through text prompts, upload images for analysis, and provide audio recordings for transcription. The web interface brings these interactions together in a single environment.
 
-LocalMind AI is an ongoing academic project, with further work planned on security, conversation management, persistent memory, and multimodal reliability.
-
----
+LocalMind AI is an academic project that also explores the practical challenges of building local AI applications, including model resource requirements, file handling, privacy, and multimodal reliability.
 
 ## 2. Objectives
 
-The main objectives of this project are:
+The main objectives of LocalMind AI are:
 
-- Develop a web application that combines text, image, and audio inputs.
-- Explore image understanding using a vision-language model.
-- Integrate local AI inference through Ollama.
-- Process audio input using speech recognition.
+- Develop a web application that supports text, image, and audio inputs.
+- Integrate a vision-language model for image understanding.
+- Run supported AI models locally through Ollama.
+- Process audio recordings using speech recognition.
 - Build an interactive interface with attachment previews and loading indicators.
-- Explore the privacy implications and security challenges of local AI applications.
-- Provide a foundation for future multimodal AI features.
-
----
+- Explore privacy and security considerations in local AI applications.
+- Establish a foundation for future conversation management and persistent memory.
 
 ## 3. Main Features
 
 ### 3.1. Text Chat
 
-Interact with the AI assistant through a conversational web interface.
+The application provides a conversational interface for interacting with a locally hosted AI model.
 
 - Submit text prompts.
-- Receive responses from a locally hosted model.
+- Receive model-generated responses.
 - Display messages in a chat-style layout.
-- Show loading indicators during processing.
+- Show loading indicators while requests are being processed.
 
 ### 3.2. Image Analysis
 
-Upload an image and ask questions about its content using LLaVA.
+LocalMind AI integrates LLaVA to support visual question answering and image-based interactions.
 
-- Image upload and preview.
-- Visual question answering.
-- Image-based interaction with the AI model.
-- Attachment management before submission.
+- Upload images through the web interface.
+- Preview attachments before submission.
+- Ask questions about image content.
+- Process image-related prompts through the configured vision-language model.
 
-### 3.3. Audio Input
+### 3.3. Audio Input and Transcription
 
-Use audio recordings as input for speech transcription.
+The application uses Whisper for speech recognition.
 
-- Upload audio files.
-- Record voice through the interface, where supported.
-- Transcribe speech using Whisper.
-- Integrate transcription into the application's processing workflow.
+- Upload supported audio files.
+- Record voice through the interface where supported.
+- Transcribe audio into text.
+- Integrate the transcription into the application's processing workflow.
 
 ### 3.4. Interactive Web Interface
 
-The frontend provides a single interface for the supported input types.
+The frontend combines the supported input types in one interface.
 
-- HTML, CSS, and JavaScript.
-- Jinja2 templates.
+- HTML5 and CSS3 for structure and styling.
+- JavaScript for client-side interactions.
+- Jinja2 for server-rendered templates.
 - Attachment previews and removal.
 - Loading indicators and chat-style presentation.
 
-### 3.5. Local AI Inference
+### 3.5. Local Model Execution
 
-Ollama runs the configured vision-language model locally. Whisper handles speech transcription through the application's audio service.
+Ollama provides the local inference runtime for the configured LLaVA model.
 
-Local inference can reduce the need to send prompts to a remote model provider, although overall privacy also depends on the application's implementation and configuration.
-
----
+Running models locally can reduce the need to send prompts to remote model-hosting services. Actual privacy guarantees depend on application behavior, configuration, and how data is handled.
 
 ## 4. Application Screenshots
+
+The following images illustrate the intended locations for the application's interface screenshots. Keep the filenames synchronized with the actual files in the repository.
 
 ### 4.1. Main Interface
 
@@ -129,7 +122,7 @@ Local inference can reduce the need to send prompts to a remote model provider, 
 ### 4.2. Text Chat
 
 <p align="center">
-  <img src="docs/images/text-chat.png" alt="LocalMind AI text chat" width="85%">
+  <img src="docs/images/text-chat.png" alt="LocalMind AI text chat interface" width="85%">
 </p>
 
 ### 4.3. Image Analysis
@@ -141,14 +134,12 @@ Local inference can reduce the need to send prompts to a remote model provider, 
 ### 4.4. Audio Input
 
 <p align="center">
-  <img src="docs/images/audio-input.png" alt="LocalMind AI audio input" width="85%">
+  <img src="docs/images/audio-input.png" alt="LocalMind AI audio input interface" width="85%">
 </p>
-
----
 
 ## 5. System Architecture
 
-The application follows a web-based architecture in which the frontend communicates with a FastAPI backend. The backend directs supported requests to the relevant AI component.
+LocalMind AI follows a web-based architecture in which the frontend communicates with a FastAPI backend. The backend routes requests to the appropriate AI component according to the task.
 
 ```mermaid
 flowchart TD
@@ -176,32 +167,28 @@ flowchart TD
 |---|---|
 | Input | User submits text, an image, or audio |
 | Backend | FastAPI receives the request |
-| Task processing | The application selects the relevant processing service |
-| AI inference | Ollama/LLaVA processes supported text and image tasks |
-| Speech recognition | Whisper transcribes audio |
+| Task processing | The application selects the appropriate processing component |
+| AI inference | Ollama and LLaVA handle supported text and image tasks |
+| Speech recognition | Whisper converts supported audio into text |
 | Output | The interface displays the response or transcription |
 
-The diagram presents the main components at a high level. The exact flow depends on the request type and the implemented backend logic.
-
----
+The diagram represents the high-level architecture. The precise processing flow depends on the implemented backend logic and request type.
 
 ## 6. Technologies Used
 
 | Technology | Role |
 |---|---|
 | Python | Main programming language |
-| FastAPI | Backend framework |
-| HTML5 | Web page structure |
+| FastAPI | Backend web framework |
+| Uvicorn | ASGI server |
+| HTML5 | Web interface structure |
 | CSS3 | Interface styling |
 | JavaScript | Frontend interactions |
-| Jinja2 | HTML templating |
-| Ollama | Local AI model runtime |
+| Jinja2 | Server-side HTML templating |
+| Ollama | Local AI inference runtime |
 | LLaVA 7B | Vision-language model |
 | OpenAI Whisper | Speech recognition |
 | FFmpeg | Audio processing support, where required |
-| Uvicorn | ASGI server |
-
----
 
 ## 7. Repository Structure
 
@@ -234,22 +221,18 @@ localmind-ai/
         └── audio-input.png
 ```
 
----
-
 ## 8. Prerequisites
 
-Before running the project, make sure you have:
+Before running LocalMind AI, make sure you have:
 
-- Python 3.10 or later, compatible with the project dependencies.
+- Python 3.10 or a compatible version supported by the project's dependencies.
 - Ollama installed and running.
-- The LLaVA model downloaded.
-- FFmpeg installed if required by the audio processing service.
+- The required LLaVA model downloaded.
+- FFmpeg installed if required by the audio processing implementation.
 - A modern web browser.
-- Sufficient memory, storage, and processing resources for local model inference.
+- Sufficient memory, storage, and processing resources for local inference.
 
-Resource requirements depend on the selected model and the available hardware.
-
----
+The resources required depend on the selected model, its configuration, and the available hardware.
 
 ## 9. Installation and Execution
 
@@ -262,18 +245,18 @@ cd localmind-ai
 
 ### 9.2. Create a Virtual Environment
 
-On Linux or macOS:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-On Windows PowerShell:
+**Windows PowerShell**
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+```
+
+**Linux or macOS**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
 ### 9.3. Install Dependencies
@@ -283,21 +266,21 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Install FFmpeg separately if it is required and is not already available on your system.
+Install FFmpeg separately if the audio service requires it and it is not already available on your system.
 
-### 9.4. Download the AI Model
+### 9.4. Install and Download the AI Model
 
 Install Ollama from its official website:
 
-https://ollama.com/
+[https://ollama.com/](https://ollama.com/)
 
-Download LLaVA:
+Download the LLaVA 7B model:
 
 ```bash
 ollama pull llava:7b
 ```
 
-Check that the model is available:
+Check the available models:
 
 ```bash
 ollama list
@@ -305,143 +288,125 @@ ollama list
 
 Make sure Ollama is running before launching the application.
 
-### 9.5. Run the Application
+### 9.5. Start the Application
 
-Start the FastAPI server with Uvicorn:
+Run the FastAPI application using Uvicorn:
 
 ```bash
 uvicorn app:app --reload
 ```
 
-Open the following address in your browser:
+Open the application in your browser:
 
-**http://127.0.0.1:8000**
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-The development server is intended for local development. Do not expose it directly to untrusted networks.
-
----
+The command assumes that `app.py` exposes a FastAPI instance named `app`. The development server is intended for local development; additional configuration is required for production deployment.
 
 ## 10. Security and Privacy
 
-Running models locally can reduce reliance on external AI APIs, but it does not automatically make an application secure.
+Local execution can reduce reliance on external AI services, but it does not automatically guarantee complete privacy or application security.
 
-The following areas require attention as the project develops:
+Important considerations include:
 
-- Validate uploaded files and enforce size limits.
-- Handle temporary files safely.
-- Review endpoint security and access to local services.
-- Evaluate prompt injection through text, images, and audio.
-- Improve error handling and logging.
-- Add automated security tests.
-- Document privacy-related settings and data retention.
+- **File validation:** Validate uploaded files and enforce file-size limits.
+- **Temporary files:** Handle temporary audio and image files safely.
+- **Endpoint security:** Review access to backend endpoints and local services.
+- **Prompt injection:** Evaluate risks from instructions embedded in text, images, and other inputs.
+- **Error handling:** Avoid exposing sensitive information in error messages and logs.
+- **Data retention:** Define how uploaded files and conversation data are stored and deleted.
+- **Network exposure:** Avoid exposing development services directly to untrusted networks.
 
-These points form part of the project's planned security improvements.
-
----
+These considerations should guide future security improvements and testing.
 
 ## 11. Roadmap
 
-The following items represent planned improvements rather than confirmed existing features.
+The following items are planned improvements and should not be interpreted as features that are already implemented.
 
-### Security and AI Security
+### Security and AI Safety
 
-- [ ] Validate uploaded files and enforce file-size limits.
-- [ ] Improve temporary-file handling.
-- [ ] Review application endpoint security.
-- [ ] Evaluate prompt injection risks.
-- [ ] Add automated security tests.
+- Strengthen upload validation and file-size restrictions.
+- Improve temporary-file handling.
+- Review endpoint access controls.
+- Evaluate multimodal prompt injection.
+- Add automated security tests.
 
 ### Conversation Management
 
-- [ ] Support multiple independent conversations.
-- [ ] Store conversation history.
-- [ ] Create, switch between, rename, and delete conversations.
+- Support multiple independent conversations.
+- Store and retrieve conversation history.
+- Create, rename, switch between, and delete conversations.
 
 ### Persistent Memory
 
-- [ ] Implement long-term memory.
-- [ ] Separate conversation context from saved memories.
-- [ ] Allow users to inspect, edit, and delete saved memories.
-- [ ] Add memory retention controls.
+- Explore persistent memory across conversations.
+- Separate short-term conversation context from saved information.
+- Allow users to inspect, update, and delete saved memories.
+- Introduce configurable retention controls.
 
 ### Multimodal Improvements
 
-- [ ] Improve combined text, image, and audio workflows.
-- [ ] Improve transcription and error handling.
-- [ ] Explore additional local models.
-- [ ] Evaluate response quality and resource usage.
+- Improve text, image, and audio integration.
+- Improve transcription error handling.
+- Explore additional local models.
+- Evaluate response quality and resource consumption.
 
 ### Testing and Reliability
 
-- [ ] Add automated backend tests.
-- [ ] Test multimodal request combinations.
-- [ ] Add security regression tests.
-- [ ] Improve setup and troubleshooting documentation.
-
----
+- Add automated backend tests.
+- Test different combinations of multimodal inputs.
+- Improve error reporting and troubleshooting documentation.
+- Evaluate performance across different hardware configurations.
 
 ## 12. Limitations
 
-- AI responses depend on model quality and configuration.
-- Image analysis may produce incorrect or incomplete interpretations.
+- Response quality depends on the selected model and its configuration.
+- Image analysis may produce inaccurate or incomplete descriptions.
 - Transcription quality depends on audio clarity, background noise, and language.
-- Local models may require substantial memory and processing resources.
-- Some combinations of text, image, and audio may require further integration.
-- Persistent memory and advanced conversation management remain planned improvements.
+- Local inference may require substantial memory and processing resources.
+- Multimodal workflows may need additional integration and testing.
+- Persistent memory and advanced conversation management are planned improvements rather than guaranteed existing features.
 
-The project is intended for academic experimentation. Outputs should be reviewed rather than treated as guaranteed correct.
-
----
+LocalMind AI is an academic project intended for experimentation. Its outputs should be reviewed, particularly when accuracy or reliability is important.
 
 ## 13. Contributors
 
-LocalMind AI is a collaborative academic project developed as part of the Master's program in Artificial Intelligence and Emerging Technologies (MIATE).
+LocalMind AI is developed in the context of the Master's program in Artificial Intelligence and Emerging Technologies (MIATE).
 
-<div align="center">
+### Mohammed Boujaada
 
-<table>
-<tr>
-<td align="center" width="280">
-<a href="https://github.com/moza369">
-<img src="https://github.com/moza369.png" width="110" alt="Repository owner's GitHub avatar"/>
-<br/>
-<strong>Mohammed Boujaada</strong>
-</a>
-<br/>
-<a href="https://github.com/moza369">GitHub</a>
-<br/>
-<a href="https://www.linkedin.com/in/mohammed-boujaada-229a3333a/">LinkedIn</a>
-</td>
-<td align="center" width="280">
-<strong>Project Collaborator</strong>
-<br/><br/>
-Add your teammate's name and GitHub profile.
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://github.com/mohammed-boujaada">
+    <img src="https://github.com/mohammed-boujaada.png" width="110" alt="Mohammed Boujaada's GitHub avatar">
+  </a>
+  <br>
+  <strong>Mohammed Boujaada</strong>
+  <br>
+  <a href="https://github.com/mohammed-boujaada">GitHub</a> |
+  <a href="https://www.linkedin.com/in/mohammed-boujaada-229a3333a/">LinkedIn</a>
+</p>
 
-<br/>
+### Academic Information
 
-| | |
+| Field | Details |
 |---|---|
-| **Institution** | Faculté Pluridisciplinaire de Nador (FPN), Université Mohammed Premier |
-| **Program** | Master's in Artificial Intelligence and Emerging Technologies (MIATE) |
-| **Module** | Computer Vision |
-| **Project** | LocalMind AI |
-| **Academic Year** | 2026–2027 |
+| Program | Master's in Artificial Intelligence and Emerging Technologies (MIATE) |
+| Institution | Faculty of Applied Sciences, Nador (FSA Nador) |
+| University | Mohammed First University, Morocco |
+| Project | LocalMind AI |
+| Academic Year | 2026–2027 |
 
-</div>
+**Collaborative repository:** [moza369/localmind-ai](https://github.com/moza369/localmind-ai)
 
----
+Additional contributor information can be added here if you want to display your teammate's name and profile.
 
 ## 14. License
 
-No license has been selected for this repository yet. A license should be added once the contributors have decided on the terms for distribution and reuse.
+No license has been specified in this README. Before distributing or allowing reuse of the project, choose an appropriate license and add the corresponding `LICENSE` file to the repository.
 
 ---
 
-<div align="center">
-
-**LocalMind AI — Bringing Text, Vision, and Audio Together**
-
-</div>
+<p align="center">
+  <strong>LocalMind AI</strong>
+  <br>
+  A local-first approach to multimodal artificial intelligence.
+</p>
