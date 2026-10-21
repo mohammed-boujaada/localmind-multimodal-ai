@@ -402,6 +402,4 @@ No license has been selected for this repository yet. A license should be added 
 
 </div>
 
-- **Liens** : Le lien GitHub pointe maintenant vers `mohammed-boujaada/localmind-multimodal-ai` (modifie le nom d'utilisateur dans l'URL si ton compte GitHub principal est différent).
 
-Tu n'as plus qu'à copier-coller ce code dans ton fichier `README.md` ! 🚀
